@@ -1,0 +1,29 @@
+{
+  "name": "stationer/demo",
+  "description": "Graphite Demonstrative Repo",
+  "homepage": "https://github.com/stationer/Demo",
+  "require": {
+    "php": "^7.0",
+    "stationer/graphite": "*",
+    "stationer/barrel": "*",
+    "stationer/pencil": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require-dev": {
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "../Graphite"
+    },
+    {
+      "type": "vcs",
+      "url": "../Barrel"
+    },
+    {
+      "type": "vcs",
+      "url": "../Pencil"
+    }
+  ]
+}
