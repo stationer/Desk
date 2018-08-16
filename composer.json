@@ -4,9 +4,11 @@
   "homepage": "https://github.com/stationer/Demo",
   "require": {
     "php": "^7.0",
+    "ext-json": "*",
     "stationer/graphite": "*",
     "stationer/barrel": "*",
-    "stationer/pencil": "*"
+    "stationer/pencil": "*",
+    "stationer/lastword": "*"
   },
   "minimum-stability": "dev",
   "prefer-stable": true,
@@ -24,6 +26,10 @@
     {
       "type": "vcs",
       "url": "../Pencil"
+    },
+    {
+      "type": "vcs",
+      "url": "../LastWord"
     }
   ]
 }

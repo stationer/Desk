@@ -24,7 +24,7 @@ if ('cli' != php_sapi_name()) {
 
 // Create tables
 echo "Creating Tables\n";
-foreach (['graphite','barrel','pencil'] as $module) {
+foreach (['graphite','barrel','pencil','lastword'] as $module) {
     $schema = file_get_contents(SITE."/vendor/stationer/$module/schema.sql");
     $queries = explode(';', $schema);
     foreach ($queries as $query) {

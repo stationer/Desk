@@ -28,6 +28,8 @@ $models = [
     '\Stationer\Pencil\models\Tag',
     '\Stationer\Pencil\models\Template',
     '\Stationer\Pencil\models\Theme',
+    '\Stationer\LastWord\models\Account',
+    '\Stationer\LastWord\models\Website',
 ];
 foreach ($models as $model) {
     echo "\n\n -- $model\n", $model::drop(true), "\n", $model::create(true), "\n";
