@@ -20,6 +20,7 @@ $models = [
     '\Stationer\Pencil\models\Article',
     '\Stationer\Pencil\models\Asset',
     '\Stationer\Pencil\models\Form',
+    '\Stationer\Pencil\models\Navigation',
     '\Stationer\Pencil\models\Node',
     '\Stationer\Pencil\models\Page',
     '\Stationer\Pencil\models\Revision',
