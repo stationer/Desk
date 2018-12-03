@@ -1,11 +1,15 @@
 RewriteEngine on
 
+## Force www
+RewriteCond %{HTTP_HOST} !^(dev1?|www)\.bettercarpeople\.com$ [NC]
+RewriteRule ^(.*)$ http://www.bettercarpeople.com/$1 [R=301,L]
+
 ## Force HTTPS
-# RewriteCond %{HTTPS} off
-# RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{SERVER_NAME}/$1 [R,L]
 
 ## Force /blog to /Blog to activate the BlogController
-# RewriteRule ^blog$ /Blog [R=301,L]
+RewriteRule ^blog$ /Blog [R=301,L]
 
 ## For passing request to the Controller
 RewriteCond %{REQUEST_FILENAME} !-d
