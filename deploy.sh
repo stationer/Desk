@@ -1,5 +1,5 @@
 #!/bin/bash
 
-composer update
-rsync -rltvR --exclude=.git/ --delete-excluded vendor/ lonefry@lonefry.com:dev.lonefry.com/
-rsync -rltv --exclude=vendor/ --delete src/ lonefry@lonefry.com:dev.lonefry.com/
+composer install
+rsync -rltvR --exclude=.git/ --exclude=.idea/ --delete-excluded vendor/ $1
+rsync -rltv --exclude=.git/ --exclude=.idea/ --exclude=vendor/ --delete src/ $1
