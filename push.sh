@@ -13,6 +13,7 @@ rsync -rltv --exclude=.git/ --delete-excluded ../Letterhead/public/ ../Pencil/no
 rsync -rltv --exclude=.git/ --delete-excluded ../Letterhead/public/css/app.css ../Pencil/src/css/letterhead.css
 rsync -rltv --exclude=.git/ --delete-excluded ../Letterhead/public/js/app.js ../Pencil/src/js/letterhead.js
 rsync -rltv --exclude=.git/ --delete-excluded ../SortTable/sort-table.min.js ../Pencil/src/js/oksort.js
+rsync -rltv --exclude=.git/ --delete-excluded ../Chalk/src/ ../Pencil/node_modules/ok-chalk/src/
 rsync -rltv --exclude=.git/ --delete-excluded ../Pencil/ ./vendor/stationer/pencil/
 
 # Grab latest LastWord code from sister repo, and associated assets from Letterhead
@@ -21,5 +22,5 @@ rsync -rltv --exclude=.git/ --delete-excluded ../Letterhead/public/css/app.css .
 rsync -rltv --exclude=.git/ --delete-excluded ../LastWord/ ./vendor/stationer/lastword/
 
 # rsync latest code up to specified host
-rsync -rltvR --exclude=.git/ --delete src/init.php vendor/ $1
+rsync -rltvR --exclude=.git/ --exclude=.idea/ --delete-excluded --delete vendor/ $1
 rsync -rltv --exclude=.git/ --exclude=p.uploads/ --exclude=P_Cache/ --exclude=vendor/ --delete src/ $1
