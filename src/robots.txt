@@ -1,2 +1,4 @@
 User-agent: *
-Disallow: /
+Disallow: /blog
+Disallow: /signatures
+Sitemap: https://www.bettercarpeople.com/sitemap.xml
