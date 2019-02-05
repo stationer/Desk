@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /blog
 Disallow: /signatures
+Disallow: /demo
 Sitemap: https://www.bettercarpeople.com/sitemap.xml
